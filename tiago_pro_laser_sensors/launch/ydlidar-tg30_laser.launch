@@ -1,0 +1,11 @@
+<launch>
+    <arg name="side" default="front"/>
+    <arg name="device_number" default="0"/>
+
+    <node name="$(arg side)_ydlidar_lidar_publisher"  pkg="ydlidar_ros_driver"  type="ydlidar_ros_driver_node" output="screen" respawn="false" >
+        <rosparam file="$(find tiago_pro_laser_sensors)/config/ydlidar_tg30_laser.yaml" command="load"/>
+        <param name="frame_id" value="base_$(arg side)_laser_link"/>
+        <param name="port" value="$(eval ('/dev/ttyACM0' if arg('side') == 'front' else '/dev/ttyACM1'))"/>
+        <remap from="scan" to="scan_$(arg side)_raw"/>
+    </node>
+</launch>
