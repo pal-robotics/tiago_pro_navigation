@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<package format="2">
+  <name>tiago_pro_2dnav</name>
+  <version>0.0.0</version>
+  <description>tiago_pro-specific launch files needed to run
+    navigation on the tiago_pro robot.</description>
+  <maintainer email="antonio.brandi@pal-robotics.com">Antonio Brandi</maintainer>
+  <license>Apache License 2.0</license>
+  <author email="antonio.brandi@pal-robotics.com">Antonio Brandi</author>
+
+  <buildtool_depend>catkin</buildtool_depend>
+
+  <exec_depend>tiago_pro_laser_sensors</exec_depend>
+  <exec_depend>tiago_pro_maps</exec_depend>
+  <exec_depend>pal_navigation_cfg_omni_base</exec_depend>
+</package>

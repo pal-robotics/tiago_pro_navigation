@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<package format="2">
+  <name>tiago_pro_maps</name>
+  <version>0.0.0</version>
+  <description>tiago_pro-specific maps and launch files.</description>
+  <maintainer email="antonio.brandi@pal-robotics.com">Antonio Brandi</maintainer>
+  <license>Apache License 2.0</license>
+  <author email="antonio.brandi@pal-robotics.com">Antonio Brandi</author>
+
+  <buildtool_depend>catkin</buildtool_depend>
+</package>
