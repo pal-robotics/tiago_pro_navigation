@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.8)
-project(tiago_pro)
+project(tiago_pro_maps)
 
 find_package(ament_cmake_auto REQUIRED)
 
