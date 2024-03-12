@@ -1,11 +1,18 @@
-cmake_minimum_required(VERSION 2.8.3)
+cmake_minimum_required(VERSION 3.8)
 project(tiago_pro_laser_sensors)
 
-find_package(catkin REQUIRED)
+find_package(ament_cmake_auto REQUIRED)
+ament_auto_find_build_dependencies()
 
-catkin_package()
+if(pal_module_cmake_FOUND)
+  pal_register_modules(module/10_laser.yaml
+                      module/10_laser_w_composition.yaml)
+endif()
 
-install(DIRECTORY launch config
-    DESTINATION ${CATKIN_PACKAGE_SHARE_DESTINATION}
-)
+if(BUILD_TESTING)
+  ament_auto_find_test_dependencies()
+  ament_lint_auto_find_test_dependencies()
+endif()
+
+ament_auto_package(INSTALL_TO_SHARE params)
 

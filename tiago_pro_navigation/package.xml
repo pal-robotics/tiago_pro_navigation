@@ -1,20 +1,19 @@
 <?xml version="1.0"?>
-<package format="2">
+<package format="3">
   <name>tiago_pro_navigation</name>
-  <version>0.1.0</version>
-  <description>The tiago_pro Navigatgion metapackage</description>
-
-  <maintainer email="antonio.brandi@pal-robotics.com">Antonio Brandi</maintainer>
+  <version>0.0.0</version>
+  <description>The tiago_pro Navigation metapackage</description>
+  <author email="andrea.capodacqua@pal-robotics.com">Andrea Capodacqua</author>
+  <maintainer email="andrea.capodacqua@pal-robotics.com">Andrea Capodacqua</maintainer>
   <license>Apache License 2.0</license>
-  <author email="antonio.brandi@pal-robotics.com">Antonio Brandi</author>
 
-  <buildtool_depend>catkin</buildtool_depend>
+  <buildtool_depend>ament_cmake_auto</buildtool_depend>
+
   <exec_depend>tiago_pro_laser_sensors</exec_depend>
   <exec_depend>tiago_pro_2dnav</exec_depend>
-  <exec_depend>pal_navigation_cfg_omni_base</exec_depend>
   <exec_depend>tiago_pro_maps</exec_depend>
 
   <export>
-    <metapackage/>
+    <build_type>ament_cmake</build_type>
   </export>
 </package>

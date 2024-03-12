@@ -1,0 +1,20 @@
+containers:
+  laser_container:
+    sick_571_front:
+      app: sick_driver
+      params: [sick_571_front]
+    sick_571_rear:
+      app: sick_driver
+      params: [sick_571_rear]
+    laserscan_multi_merger: 
+      app: laserscan_multi_merger  
+      params: [default] 
+    pal_laser_filters:
+      app: pal_laser_filters
+      params: [laser_filters_default]
+    dlo_ros:
+      app: dlo_ros
+      params: [default]
+    lifecycle_manager_laser:
+      app: lifecycle_manager
+      params: [lifecycle_manager_laser]

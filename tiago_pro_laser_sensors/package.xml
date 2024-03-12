@@ -1,17 +1,25 @@
 <?xml version="1.0"?>
-<package format="2">
+<package format="3">
   <name>tiago_pro_laser_sensors</name>
   <version>0.0.0</version>
   <description>tiago_pro-specific laser sensors launch and config files.</description>
-  <maintainer email="antonio.brandi@pal-robotics.com">Antonio Brandi</maintainer>
-  <license>Modified BSD</license>
-  <author email="antonio.brandi@pal-robotics.com">Antonio Brandi</author>
+  <author email="andrea.capodacqua@pal-robotics.com">Andrea Capodacqua</author>
+  <maintainer email="andrea.capodacqua@pal-robotics.com">Andrea Capodacqua</maintainer>
+  <license>Apache License 2.0</license>
 
-  <buildtool_depend>catkin</buildtool_depend>
+  <buildtool_depend>ament_cmake_auto</buildtool_depend>
+
+  <build_depend condition="$PAL_DISTRO >= alum">pal_module_cmake</build_depend>
+
 
   <exec_depend>sick_tim</exec_depend>
-  <exec_depend>hokuyo_node</exec_depend>
   <exec_depend>laser_filters</exec_depend>
-  <exec_depend>pal_filters</exec_depend>
   <exec_depend>ira_laser_tools</exec_depend>
+
+  <test_depend>ament_lint_auto</test_depend>
+  <test_depend>ament_lint_common</test_depend>
+
+  <export>
+    <build_type>ament_cmake</build_type>
+  </export>
 </package>

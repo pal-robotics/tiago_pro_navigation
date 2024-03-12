@@ -1,20 +1,25 @@
-cmake_minimum_required(VERSION 3.0.2)
+cmake_minimum_required(VERSION 3.8)
 project(tiago_pro_2dnav)
 
-find_package(catkin REQUIRED)
+find_package(ament_cmake_auto REQUIRED)
 
-catkin_package()
+# PAL Robotics stricter build flags, other developers should not worry about
+# this
+find_package(ament_cmake_pal QUIET)
 
-# install(
-#     PROGRAMS
-#         scripts/record_mapping.sh
-#         scripts/record_move_base.sh
-#         scripts/record_odom.sh
-#         scripts/record_patrol.sh
-#         scripts/record_rgbd.sh
-#     DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION})
+ament_auto_find_build_dependencies()
 
-foreach(dir launch config)
-    install(DIRECTORY ${dir}/
-        DESTINATION ${CATKIN_PACKAGE_SHARE_DESTINATION}/${dir})
-endforeach(dir)
+if(pal_module_cmake_FOUND)
+  pal_register_modules(module/10_localization.yaml
+                      module/10_localization_w_composition.yaml
+                      module/10_navigation.yaml
+                      module/10_navigation_w_composition.yaml
+                      module/10_slam.yaml)
+endif()
+
+if(BUILD_TESTING)
+  find_package(ament_lint_auto REQUIRED)
+  ament_lint_auto_find_test_dependencies()
+endif()
+
+ament_auto_package(INSTALL_TO_SHARE config launch params)

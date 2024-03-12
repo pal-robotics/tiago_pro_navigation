@@ -1,11 +1,15 @@
 <?xml version="1.0"?>
-<package format="2">
+<package format="3">
   <name>tiago_pro_maps</name>
   <version>0.0.0</version>
   <description>tiago_pro-specific maps and launch files.</description>
-  <maintainer email="antonio.brandi@pal-robotics.com">Antonio Brandi</maintainer>
+  <author email="andrea.capodacqua@pal-robotics.com">Andrea Capodacqua</author>
+  <maintainer email="andrea.capodacqua@pal-robotics.com">Andrea Capodacqua</maintainer>
   <license>Apache License 2.0</license>
-  <author email="antonio.brandi@pal-robotics.com">Antonio Brandi</author>
 
-  <buildtool_depend>catkin</buildtool_depend>
+  <buildtool_depend>ament_cmake_auto</buildtool_depend>
+
+  <export>
+    <build_type>ament_cmake</build_type>
+  </export>
 </package>

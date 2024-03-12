@@ -1,16 +1,27 @@
 <?xml version="1.0"?>
-<package format="2">
+<package format="3">
   <name>tiago_pro_2dnav</name>
   <version>0.0.0</version>
-  <description>tiago_pro-specific launch files needed to run
-    navigation on the tiago_pro robot.</description>
-  <maintainer email="antonio.brandi@pal-robotics.com">Antonio Brandi</maintainer>
+  <description>tiago pro-specific launch files needed to run navigation on the tiago_pro robot.</description>
+  <author email="andrea.capodacqua@pal-robotics.com">Andrea Capodacqua</author>
+  <maintainer email="andrea.capodacqua@pal-robotics.com">Andrea Capodacqua</maintainer>
   <license>Apache License 2.0</license>
-  <author email="antonio.brandi@pal-robotics.com">Antonio Brandi</author>
 
-  <buildtool_depend>catkin</buildtool_depend>
+  <buildtool_depend>ament_cmake_auto</buildtool_depend>
+
+  <build_depend condition="$PAL_DISTRO >= alum">pal_module_cmake</build_depend>
 
   <exec_depend>tiago_pro_laser_sensors</exec_depend>
   <exec_depend>tiago_pro_maps</exec_depend>
-  <exec_depend>pal_navigation_cfg_omni_base</exec_depend>
+  <exec_depend>nav2_bringup</exec_depend>
+  <exec_depend condition="$PAL_DISTRO > 0">pal_nav2_bringup</exec_depend>
+  <exec_depend>rviz2</exec_depend>
+  <exec_depend>ros2launch</exec_depend>
+
+  <test_depend>ament_lint_auto</test_depend>
+  <test_depend>ament_lint_common</test_depend>
+
+  <export>
+    <build_type>ament_cmake</build_type>
+  </export>
 </package>

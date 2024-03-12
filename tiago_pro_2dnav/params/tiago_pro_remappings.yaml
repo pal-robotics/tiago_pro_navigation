@@ -1,0 +1,21 @@
+#* Remappings that will be applied to all the Navigation,
+#* SLAM and Localization parameters for TIAGo OMNI Base Robot
+
+global_frame : "map"
+base_link_frame : "base_link"
+odom_topic : "/mobile_base_controller/odom"
+# As today use_sim_time can only be set from the launch file 
+# https://github.com/ros-planning/navigation2/blob/main/nav2_bringup/launch/navigation_launch.py#L111
+use_sim_time : False
+robot_radius : 0.0 # Disabled
+footprint : "[[ 0.35, 0.24], [-0.35, 0.24], [-0.35, -0.24], [ 0.35, -0.24]]"
+scan_topic : "/scan" 
+odom_frame : "odom"
+base_footprint_frame : "base_footprint"
+
+# Remappings Laser Pipeline
+front_scan_topic: "/scan_front_raw"
+front_laser_frame: "base_front_laser_link"
+rear_scan_topic: "/scan_rear_raw"
+rear_laser_frame: "base_rear_laser_link"
+laser_frame: "virtual_base_laser_link"
