@@ -30,13 +30,13 @@ def generate_launch_description():
    
     declare_slam_arg = DeclareLaunchArgument(
         "slam",
-        default_value="False",
+        default_value="false",
         description="Whether or not you are using SLAM",
     )
 
     pal_nav2_bringup = get_package_share_directory("pal_nav2_bringup")
 
-    pal_nav2_bringup_launch = IncludeLaunchDescription(
+    nav_bringup_launch = IncludeLaunchDescription(
         PythonLaunchDescriptionSource(
             os.path.join(
                 pal_nav2_bringup,
@@ -46,10 +46,14 @@ def generate_launch_description():
         ),
         launch_arguments={
             "params_pkg": "tiago_pro_2dnav",
-            "params_file": "tiago_pro_slam.yaml"
-        }.items(),
+            "params_file": "tiago_pro_nav.yaml",
+            "remappings_file": os.path.join(
+                get_package_share_directory("tiago_pro_2dnav"),
+                "params",
+                "tiago_pro_remappings_sim.yaml"),
+        }.items()
     )
-
+    
     slam_bringup_launch = IncludeLaunchDescription(
         PythonLaunchDescriptionSource(
             os.path.join(
@@ -82,7 +86,7 @@ def generate_launch_description():
     # Create the launch description and populate
     ld = LaunchDescription()
     ld.add_action(declare_slam_arg)
-    ld.add_action(pal_nav2_bringup_launch)
+    ld.add_action(nav_bringup_launch)
     ld.add_action(slam_bringup_launch)
     ld.add_action(loc_bringup_launch)
 
