@@ -4,7 +4,7 @@ nodes:
     params: [default] 
   pal_laser_filters:
     app: pal_laser_filters
-    params: [laser_filters_default]
+    params: [laser_filters_sim]
   lifecycle_manager_laser:
     app: lifecycle_manager
     params: [lifecycle_manager_laser_sim]
