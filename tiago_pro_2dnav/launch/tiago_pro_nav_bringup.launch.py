@@ -27,7 +27,7 @@ from launch.launch_description_sources import PythonLaunchDescriptionSource
 
 
 def generate_launch_description():
-   
+
     declare_slam_arg = DeclareLaunchArgument(
         "slam",
         default_value="false",
@@ -51,9 +51,10 @@ def generate_launch_description():
                 get_package_share_directory("tiago_pro_2dnav"),
                 "params",
                 "tiago_pro_remappings_sim.yaml"),
+            "rviz": "true"
         }.items()
     )
-    
+
     slam_bringup_launch = IncludeLaunchDescription(
         PythonLaunchDescriptionSource(
             os.path.join(
@@ -64,11 +65,12 @@ def generate_launch_description():
         ),
         launch_arguments={
             "params_pkg": "tiago_pro_2dnav",
-            "params_file": "tiago_pro_slam.yaml"
+            "params_file": "tiago_pro_slam.yaml",
+            "rviz": "false"
         }.items(),
         condition=IfCondition(LaunchConfiguration('slam')),
     )
-    
+
     loc_bringup_launch = IncludeLaunchDescription(
         PythonLaunchDescriptionSource(
             os.path.join(
@@ -79,7 +81,8 @@ def generate_launch_description():
         ),
         launch_arguments={
             "params_pkg": "tiago_pro_2dnav",
-            "params_file": "tiago_pro_loc.yaml"
+            "params_file": "tiago_pro_loc.yaml",
+            "rviz": "false"
         }.items(),
         condition=UnlessCondition(LaunchConfiguration('slam')),
     )
