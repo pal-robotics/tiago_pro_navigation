@@ -47,6 +47,7 @@ def generate_launch_description():
         launch_arguments={
             "params_pkg": "tiago_pro_2dnav",
             "params_file": "tiago_pro_nav.yaml",
+            "robot_name": "tiago_pro",
             "remappings_file": os.path.join(
                 get_package_share_directory("tiago_pro_2dnav"),
                 "params",
@@ -66,6 +67,7 @@ def generate_launch_description():
         launch_arguments={
             "params_pkg": "tiago_pro_2dnav",
             "params_file": "tiago_pro_slam.yaml",
+            "robot_name": "tiago_pro",
             "rviz": "false"
         }.items(),
         condition=IfCondition(LaunchConfiguration('slam')),
@@ -82,6 +84,7 @@ def generate_launch_description():
         launch_arguments={
             "params_pkg": "tiago_pro_2dnav",
             "params_file": "tiago_pro_loc.yaml",
+            "robot_name": "tiago_pro",
             "rviz": "false"
         }.items(),
         condition=UnlessCondition(LaunchConfiguration('slam')),
