@@ -2,8 +2,8 @@
 Changelog for package tiago_pro_2dnav
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+2.0.1 (2024-03-26)
+------------------
 * Merge branch 'fix/modules' into 'humble-devel'
   Fix/modules
   See merge request robots/tiago_pro_navigation!2
