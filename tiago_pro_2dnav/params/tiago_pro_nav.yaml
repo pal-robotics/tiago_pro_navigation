@@ -16,10 +16,10 @@ nodes:
     params: [navigate_w_replanning_and_recovery]
   controller_server:
     app: controller_server
-    params: [rpp_shim, local_costmap_omni]
+    params: [rpp_shim, local_costmap]
   planner_server:
     app: planner_server
-    params: [state_lattice_omni, global_costmap_omni]
+    params: [smac_2D, global_costmap]
   behavior_server:
     app: behavior_server
     params: [spin_backup_wait]

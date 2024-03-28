@@ -1,3 +1,15 @@
+# Configure the Navigation, Localization and SLAM
+# nodes:
+#   <NODE-NAME>:
+#     app: <APP-NAME>
+#     params: [<LIST-YAML-PARAM-FILES>]
+#
+# containers:
+#   <CONTAINER-NAME>
+#     <NODE-NAME>:
+#       app: <APP-NAME>
+#       params: [<LIST-YAML-PARAM-FILES>]
+
 containers:
   laser_container:
     sick_571_front:

@@ -1,3 +1,15 @@
+# Configure the Navigation, Localization and SLAM
+# nodes:
+#   <NODE-NAME>:
+#     app: <APP-NAME>
+#     params: [<LIST-YAML-PARAM-FILES>]
+#
+# containers:
+#   <CONTAINER-NAME>
+#     <NODE-NAME>:
+#       app: <APP-NAME>
+#       params: [<LIST-YAML-PARAM-FILES>]
+
 nodes: 
   laserscan_multi_merger: 
     app: laserscan_multi_merger  
@@ -7,4 +19,4 @@ nodes:
     params: [laser_filters_sim]
   lifecycle_manager_laser:
     app: lifecycle_manager
-    params: [lifecycle_manager_laser_sim]
+    params: [lifecycle_manager_laser_sim_omni]

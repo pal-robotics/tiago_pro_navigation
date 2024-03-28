@@ -1,3 +1,15 @@
+# Configure the Navigation, Localization and SLAM
+# nodes:
+#   <NODE-NAME>:
+#     app: <APP-NAME>
+#     params: [<LIST-YAML-PARAM-FILES>]
+#
+# containers:
+#   <CONTAINER-NAME>
+#     <NODE-NAME>:
+#       app: <APP-NAME>
+#       params: [<LIST-YAML-PARAM-FILES>]
+
 nodes: 
   sick_571_front:
     app: sick_driver
