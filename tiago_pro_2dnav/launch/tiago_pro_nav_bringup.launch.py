@@ -46,7 +46,7 @@ def generate_launch_description():
             ),
             launch_arguments={
                 "params_pkg": "tiago_pro_laser_sensors",
-                "params_file": "laser_pipeline_sim_omni.yaml",
+                "params_file": "laser_pipeline_sim_multi.yaml",
                 "robot_name": "tiago_pro",
                 "remappings_file": os.path.join(
                     get_package_share_directory("tiago_pro_2dnav"),
@@ -113,8 +113,8 @@ def generate_launch_description():
     ld = LaunchDescription()
     ld.add_action(laser_bringup_launch)
     ld.add_action(declare_slam_arg)
-    ld.add_action(nav_bringup_launch)
     ld.add_action(slam_bringup_launch)
+    ld.add_action(nav_bringup_launch)
     ld.add_action(loc_bringup_launch)
 
     return ld

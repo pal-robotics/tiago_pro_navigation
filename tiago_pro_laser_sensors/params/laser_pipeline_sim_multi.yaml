@@ -22,4 +22,4 @@ nodes:
     params: [default]
   lifecycle_manager_laser:
     app: lifecycle_manager
-    params: [lifecycle_manager_laser_sim_omni]
+    params: [lifecycle_manager_laser_sim_multi]
