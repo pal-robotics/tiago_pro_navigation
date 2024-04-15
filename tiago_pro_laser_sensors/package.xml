@@ -11,10 +11,12 @@
 
   <build_depend condition="$PAL_DISTRO >= alum">pal_module_cmake</build_depend>
 
+  <exec_depend condition="$PAL_DISTRO >= alum">sick_tim</exec_depend>
+  <exec_depend condition="$PAL_DISTRO >= alum">pal_laser_filters</exec_depend>
+  <exec_depend condition="$PAL_DISTRO >= alum">ira_laser_tools</exec_depend>
+  <exec_depend condition="$PAL_DISTRO >= alum">dlo_ros</exec_depend>
+  <exec_depend condition="$PAL_DISTRO >= alum">pal_nav2_bringup</exec_depend>
 
-  <exec_depend>sick_tim</exec_depend>
-  <exec_depend>laser_filters</exec_depend>
-  <exec_depend>ira_laser_tools</exec_depend>
 
   <test_depend>ament_lint_auto</test_depend>
   <test_depend>ament_lint_common</test_depend>
