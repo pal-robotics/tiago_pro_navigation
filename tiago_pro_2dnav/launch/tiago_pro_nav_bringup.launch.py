@@ -55,7 +55,7 @@ def generate_launch_description():
                 "rviz": "False"
             }.items(),
         )
-    
+
     nav_bringup_launch = IncludeLaunchDescription(
         PythonLaunchDescriptionSource(
             os.path.join(
