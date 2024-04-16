@@ -10,13 +10,24 @@
 #       app: <APP-NAME>
 #       params: [<LIST-YAML-PARAM-FILES>]
 
-nodes: 
-  sick_571_front:
-    app: sick_driver
-    params: [sick_571_front]
+nodes:
   sick_571_rear:
     app: sick_driver
-    params: [sick_571_rear]
+    params: [sick_571]
+    variables:
+      min_ang: -2.35619 # !degrees -135 (not supported)
+      max_ang:  2.35619 # !degrees 135 (not supported)
+      frame_id: "base_rear_laser_link"
+      scan_topic: "/scan_rear_raw"
+  sick_571_front:
+    app: sick_driver
+    params: [sick_571]
+    variables:
+      device_number: 1
+      min_ang: -2.35619 # !degrees -135 (not supported)
+      max_ang:  2.35619 # !degrees 135 (not supported)
+      frame_id: "base_front_laser_link"
+      scan_topic: "/scan_front_raw"
   laserscan_multi_merger: 
     app: laserscan_multi_merger  
     params: [default] 
