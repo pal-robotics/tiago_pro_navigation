@@ -2,6 +2,17 @@
 Changelog for package tiago_pro_2dnav
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* Merge branch 'fix/renamed-params' into 'humble-devel'
+  Fix/renamed params
+  See merge request robots/tiago_pro_navigation!3
+* linters
+* renamed params according to new naming convention
+* fix navigation launch
+* renamed params
+* Contributors: andreacapodacqua
+
 2.0.1 (2024-03-26)
 ------------------
 * Merge branch 'fix/modules' into 'humble-devel'
