@@ -11,12 +11,6 @@
 #       params: [<LIST-YAML-PARAM-FILES>]
 
 nodes: 
-  sick_571_front:
-    app: sick_driver
-    params: [sick_571_front]
-  sick_571_rear:
-    app: sick_driver
-    params: [sick_571_rear]
   laserscan_multi_merger: 
     app: laserscan_multi_merger  
     params: [default] 
@@ -28,4 +22,4 @@ nodes:
     params: [default]
   lifecycle_manager_laser:
     app: lifecycle_manager
-    params: [lifecycle_manager_laser_multi]
+    params: [lifecycle_manager_laser_sim_multi]
