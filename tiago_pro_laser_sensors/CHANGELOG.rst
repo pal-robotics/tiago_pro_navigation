@@ -2,6 +2,15 @@
 Changelog for package tiago_pro_laser_sensors
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* Merge branch 'feat/variables' into 'humble-devel'
+  Feat/variables
+  See merge request robots/tiago_pro_navigation!4
+* new variables names
+* using variables for laser pipelines
+* Contributors: andreacapodacqua
+
 2.0.2 (2024-04-16)
 ------------------
 * Merge branch 'fix/renamed-params' into 'humble-devel'
