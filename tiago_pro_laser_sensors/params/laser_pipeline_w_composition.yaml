@@ -37,6 +37,6 @@ containers:
       params: [default]
     lifecycle_manager_laser:
       app: lifecycle_manager
-      params: [lifecycle_manager_laser]
+      params: [default]
       variables:
         node_names: ["sick_571_front", "sick_571_rear", "laserscan_multi_merger", "pal_laser_filters", "dlo_ros"]
