@@ -13,8 +13,6 @@ robot_radius : 0.0 # Disabled
 footprint : "[[ 0.35, 0.24], [-0.35, 0.24], [-0.35, -0.24], [ 0.35, -0.24]]"
 
 laser_frame : "virtual_base_laser_link"
-laser_min_angle: -2.35619 # !degrees -135 (not supported)
-laser_max_angle: 2.35619 # !degrees 135 (not supported)
 scan_topic : "/scan" 
 scan_raw_topic: "/scan_raw"
 scan_raw_topic_0: "/scan_rear_raw"

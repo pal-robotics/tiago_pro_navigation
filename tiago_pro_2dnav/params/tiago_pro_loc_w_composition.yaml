@@ -23,4 +23,6 @@ containers:
       params: [amcl_omni]
     lifecycle_manager_localization:
       app: lifecycle_manager
-      params: [lifecycle_manager_localization]
+      params: [default]
+      variables:
+        node_names: ["map_server", "map_saver", "amcl"]

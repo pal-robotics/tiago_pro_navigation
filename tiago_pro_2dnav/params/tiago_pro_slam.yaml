@@ -19,4 +19,6 @@ nodes:
       params: [map_saver]
     lifecycle_manager_slam:
       app: lifecycle_manager
-      params: [lifecycle_manager_slam]
+      params: [default]
+      variables:
+        node_names: ["map_saver"]
