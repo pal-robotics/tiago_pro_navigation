@@ -2,8 +2,8 @@
 Changelog for package tiago_pro_2dnav
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+2.0.4 (2024-04-23)
+------------------
 * Merge branch 'fix/variables' into 'humble-devel'
   Fix/variables
   See merge request robots/tiago_pro_navigation!5
