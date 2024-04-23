@@ -13,7 +13,7 @@
 nodes: 
   laserscan_multi_merger: 
     app: laserscan_multi_merger  
-    params: [default]
+    params: [default] 
   pal_laser_filters:
     app: pal_laser_filters
     params: [default]
@@ -22,4 +22,6 @@ nodes:
     params: [default]
   lifecycle_manager_laser:
     app: lifecycle_manager
-    params: [lifecycle_manager_laser_sim_multi]
+    params: [default]
+    variables:
+      node_names: ["laserscan_multi_merger", "pal_laser_filters", "dlo_ros"]

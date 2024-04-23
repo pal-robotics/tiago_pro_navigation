@@ -32,4 +32,6 @@ containers:
       params: [navigate_through_waypoints]
     lifecycle_manager_navigation:
       app: lifecycle_manager
-      params: [lifecycle_manager_navigation]
+      params: [default]
+      variables:
+        node_names: ["bt_navigator", "controller_server", "planner_server", "behavior_server", "waypoint_follower", "pal_bt_navigator"]
