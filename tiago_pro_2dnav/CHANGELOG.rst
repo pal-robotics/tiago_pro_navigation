@@ -2,6 +2,15 @@
 Changelog for package tiago_pro_2dnav
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* Merge branch 'fix/variables' into 'humble-devel'
+  Fix/variables
+  See merge request robots/tiago_pro_navigation!5
+* using variables lifecycle manager
+* fix variables, laser angles
+* Contributors: andreacapodacqua
+
 2.0.3 (2024-04-18)
 ------------------
 * Merge branch 'feat/variables' into 'humble-devel'
