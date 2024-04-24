@@ -12,7 +12,7 @@
   <build_depend condition="$PAL_DISTRO >= alum">pal_module_cmake</build_depend>
 
   <exec_depend>tiago_pro_laser_sensors</exec_depend>
-  <exec_depend>tiago_pro_maps</exec_depend>
+  <exec_depend>pal_maps</exec_depend>
   <exec_depend>nav2_bringup</exec_depend>
   <exec_depend condition="$PAL_DISTRO >= alum">pal_nav2_bringup</exec_depend>
   <exec_depend condition="$PAL_DISTRO >= alum">pal_nav2_bt_navigator</exec_depend>
