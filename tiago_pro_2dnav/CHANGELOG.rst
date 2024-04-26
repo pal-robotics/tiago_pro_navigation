@@ -2,6 +2,15 @@
 Changelog for package tiago_pro_2dnav
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* Merge branch 'abr/fix/new-launch-pal' into 'humble-devel'
+  Adapt to the new launch_pal
+  See merge request robots/tiago_pro_navigation!7
+* Update tiago_pro_remappings_sim.yaml
+* Adapt to the new launch_pal
+* Contributors: antoniobrandi
+
 2.0.4 (2024-04-23)
 ------------------
 * Merge branch 'fix/variables' into 'humble-devel'
