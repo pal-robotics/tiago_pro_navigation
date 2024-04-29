@@ -2,6 +2,11 @@
 Changelog for package tiago_pro_2dnav
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* deprecate tiago_pro_maps
+* Contributors: antoniobrandi
+
 2.0.5 (2024-04-26)
 ------------------
 * Merge branch 'abr/fix/new-launch-pal' into 'humble-devel'
