@@ -2,8 +2,8 @@
 Changelog for package tiago_pro_2dnav
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+2.0.6 (2024-04-29)
+------------------
 * deprecate tiago_pro_maps
 * Contributors: antoniobrandi
 
