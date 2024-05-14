@@ -1,0 +1,5 @@
+containers:
+  head_front_rgbd_container:
+    head_d435i:
+      app: realsense
+      params: [default_435]
