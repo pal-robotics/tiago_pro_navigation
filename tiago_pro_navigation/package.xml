@@ -11,7 +11,7 @@
   <buildtool_depend>catkin</buildtool_depend>
   <exec_depend>tiago_pro_laser_sensors</exec_depend>
   <exec_depend>tiago_pro_2dnav</exec_depend>
-  <exec_depend>pal_navigation_cfg_omni_base</exec_depend>
+  <exec_depend>pal_navigation_cfg_tiago_pro</exec_depend>
   <exec_depend>tiago_pro_maps</exec_depend>
 
   <export>

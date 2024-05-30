@@ -6,7 +6,7 @@
   <arg name="mapping" default="karto"/>
 
   <!-- SLAM -->
-  <include file="$(find pal_navigation_cfg_omni_base)/launch/mapping_$(arg mapping).launch">
+  <include file="$(find pal_navigation_cfg_tiago_pro)/launch/mapping_$(arg mapping).launch">
     <arg name="scan" value="$(arg scan)"/>
     <arg name="laser_model" value="$(arg laser_model)"/>
   </include>
