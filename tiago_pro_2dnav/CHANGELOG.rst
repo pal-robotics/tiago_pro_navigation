@@ -2,6 +2,11 @@
 Changelog for package tiago_pro_2dnav
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* move rviz in nav launch file
+* Contributors: antoniobrandi
+
 2.0.6 (2024-04-29)
 ------------------
 * deprecate tiago_pro_maps

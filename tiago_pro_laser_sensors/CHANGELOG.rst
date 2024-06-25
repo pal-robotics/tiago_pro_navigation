@@ -2,6 +2,9 @@
 Changelog for package tiago_pro_laser_sensors
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+
 2.0.6 (2024-04-29)
 ------------------
 
