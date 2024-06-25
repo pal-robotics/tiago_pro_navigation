@@ -23,6 +23,7 @@ from launch.actions import (
 )
 from launch.conditions import IfCondition, UnlessCondition
 from launch.substitutions import LaunchConfiguration
+from launch_ros.actions import Node
 from launch.launch_description_sources import PythonLaunchDescriptionSource
 
 
@@ -35,6 +36,7 @@ def generate_launch_description():
     )
 
     pal_nav2_bringup = get_package_share_directory("pal_nav2_bringup")
+    tiago_pro_2dnav = get_package_share_directory("tiago_pro_2dnav")
 
     laser_bringup_launch = IncludeLaunchDescription(
             PythonLaunchDescriptionSource(
@@ -49,10 +51,9 @@ def generate_launch_description():
                 "params_file": "laser_pipeline_sim_multi.yaml",
                 "robot_name": "tiago_pro",
                 "remappings_file": os.path.join(
-                    get_package_share_directory("tiago_pro_2dnav"),
+                    tiago_pro_2dnav,
                     "params",
                     "tiago_pro_remappings_sim.yaml"),
-                "rviz": "False"
             }.items(),
         )
 
@@ -69,10 +70,9 @@ def generate_launch_description():
             "params_file": "tiago_pro_nav.yaml",
             "robot_name": "tiago_pro",
             "remappings_file": os.path.join(
-                get_package_share_directory("tiago_pro_2dnav"),
+                tiago_pro_2dnav,
                 "params",
                 "tiago_pro_remappings_sim.yaml"),
-            "rviz": "true"
         }.items()
     )
 
@@ -88,7 +88,6 @@ def generate_launch_description():
             "params_pkg": "tiago_pro_2dnav",
             "params_file": "tiago_pro_slam.yaml",
             "robot_name": "tiago_pro",
-            "rviz": "false"
         }.items(),
         condition=IfCondition(LaunchConfiguration('slam')),
     )
@@ -105,10 +104,22 @@ def generate_launch_description():
             "params_pkg": "tiago_pro_2dnav",
             "params_file": "tiago_pro_loc.yaml",
             "robot_name": "tiago_pro",
-            "rviz": "false"
         }.items(),
         condition=UnlessCondition(LaunchConfiguration('slam')),
     )
+
+    rviz_node = Node(
+            package="rviz2",
+            executable="rviz2",
+            arguments=["-d", os.path.join(
+                tiago_pro_2dnav,
+                "config",
+                "rviz",
+                "navigation.rviz",
+            )],
+            output="screen",
+        )
+
     # Create the launch description and populate
     ld = LaunchDescription()
     ld.add_action(laser_bringup_launch)
@@ -116,5 +127,6 @@ def generate_launch_description():
     ld.add_action(slam_bringup_launch)
     ld.add_action(nav_bringup_launch)
     ld.add_action(loc_bringup_launch)
+    ld.add_action(rviz_node)
 
     return ld
