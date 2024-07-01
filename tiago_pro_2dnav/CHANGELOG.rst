@@ -2,6 +2,11 @@
 Changelog for package tiago_pro_2dnav
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* uring costmap with filters
+* Contributors: antoniobrandi
+
 2.0.7 (2024-06-25)
 ------------------
 * move rviz in nav launch file
