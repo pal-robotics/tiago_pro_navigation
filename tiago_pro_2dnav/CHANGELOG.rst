@@ -2,6 +2,11 @@
 Changelog for package tiago_pro_2dnav
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* Add warning for pal_module_cmake not found
+* Contributors: Noel Jimenez
+
 2.0.8 (2024-07-01)
 ------------------
 * uring costmap with filters
