@@ -1,7 +1,7 @@
 nodes:
   head_front_camera:
     app: realsense
-    params: [d435i_rgbd_high_accuracy]
+    params: [d435_rgbd_high_accuracy]
     namespace: "head_front_camera"
     variables:
       camera_name: "head_front_camera"
