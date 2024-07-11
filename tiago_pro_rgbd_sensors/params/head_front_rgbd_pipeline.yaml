@@ -1,5 +1,8 @@
-containers:
-  head_front_rgbd_container:
-    head_d435i:
-      app: realsense
-      params: [default_435]
+nodes:
+  head_front_camera:
+    app: realsense
+    params: [d435i_rgbd_high_accuracy]
+    namespace: "head_front_camera"
+    variables:
+      camera_name: "head_front_camera"
+      serial_no: "_"
