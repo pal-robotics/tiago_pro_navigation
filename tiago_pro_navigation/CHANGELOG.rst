@@ -2,6 +2,11 @@
 Changelog for package tiago_pro_navigation
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* Added dependency and rename
+* Contributors: sergiomoyano
+
 2.0.9 (2024-07-09)
 ------------------
 
