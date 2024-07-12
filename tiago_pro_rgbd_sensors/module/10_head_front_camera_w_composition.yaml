@@ -1,4 +1,4 @@
-head_front_camera:
+head_front_camera_w_composition:
   launch: "pal_nav2_bringup nav_bringup.launch.py 
           params_pkg:=tiago_pro_rgbd_sensors
           params_file:=head_front_camera_pipeline_w_composition.yaml
