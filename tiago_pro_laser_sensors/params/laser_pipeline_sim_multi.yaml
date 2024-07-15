@@ -16,7 +16,7 @@ nodes:
     params: [default] 
   pal_laser_filters:
     app: pal_laser_filters
-    params: [default]
+    params: [non_circular_footprint]
   dlo_ros:
     app: dlo_ros
     params: [default]

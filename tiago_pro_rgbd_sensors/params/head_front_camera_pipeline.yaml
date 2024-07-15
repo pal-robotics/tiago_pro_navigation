@@ -16,5 +16,5 @@ nodes:
     params: [d435_rgbd_high_accuracy]
     namespace: "head_front_camera"
     variables:
-      camera_name: "head_front_camera"
+      camera_name: ${head_front_camera_name}
       serial_no: "_"
