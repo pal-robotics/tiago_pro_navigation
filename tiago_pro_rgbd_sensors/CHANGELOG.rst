@@ -2,8 +2,8 @@
 Changelog for package tiago_pro_rgbd_sensors
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+2.1.1 (2024-07-17)
+------------------
 * using camera name in pipeline
 * using variables for pipelines
 * Contributors: andreacapodacqua
