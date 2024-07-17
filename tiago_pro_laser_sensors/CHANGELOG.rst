@@ -2,6 +2,11 @@
 Changelog for package tiago_pro_laser_sensors
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* using variables for pipelines
+* Contributors: andreacapodacqua
+
 2.1.0 (2024-07-12)
 ------------------
 

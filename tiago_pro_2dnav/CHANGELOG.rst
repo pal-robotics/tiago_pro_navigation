@@ -2,6 +2,12 @@
 Changelog for package tiago_pro_2dnav
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* using camera name in pipeline
+* using variables for pipelines
+* Contributors: andreacapodacqua
+
 2.1.0 (2024-07-12)
 ------------------
 
