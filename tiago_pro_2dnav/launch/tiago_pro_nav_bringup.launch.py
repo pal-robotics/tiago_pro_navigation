@@ -15,115 +15,103 @@
 import os
 
 from ament_index_python.packages import get_package_share_directory
+from dataclasses import dataclass
 
 from launch import LaunchDescription
 from launch.actions import (
-    IncludeLaunchDescription,
     DeclareLaunchArgument,
 )
 from launch.conditions import IfCondition, UnlessCondition
 from launch.substitutions import LaunchConfiguration
 from launch_ros.actions import Node
-from launch.launch_description_sources import PythonLaunchDescriptionSource
+from launch_pal.robot_arguments import CommonArgs
+from launch_pal.arg_utils import LaunchArgumentsBase
+from launch_pal.include_utils import include_scoped_launch_py_description
+
+
+@dataclass(frozen=True)
+class LaunchArguments(LaunchArgumentsBase):
+
+    slam: DeclareLaunchArgument = CommonArgs.slam
 
 
 def generate_launch_description():
 
-    declare_slam_arg = DeclareLaunchArgument(
-        "slam",
-        default_value="false",
-        description="Whether or not you are using SLAM",
+    # Create the launch description and populate
+    ld = LaunchDescription()
+    launch_arguments = LaunchArguments()
+
+    launch_arguments.add_to_launch_description(ld)
+
+    declare_actions(ld, launch_arguments)
+
+    return ld
+
+
+def declare_actions(launch_description: LaunchDescription, launch_args: LaunchArguments):
+
+    tiago_pro_2dnav = get_package_share_directory("tiago_pro_2dnav")
+    remmaping_file = os.path.join(tiago_pro_2dnav, "params", "tiago_pro_remappings_sim.yaml")
+
+    laser_bringup_launch = include_scoped_launch_py_description(
+        pkg_name="pal_nav2_bringup",
+        paths=["launch", "nav_bringup.launch.py"],
+        launch_arguments={
+            "params_pkg": "tiago_pro_laser_sensors",
+            "params_file": "laser_pipeline_sim_multi.yaml",
+            "robot_name": "tiago_pro",
+            "remappings_file": remmaping_file,
+        }
     )
 
-    pal_nav2_bringup = get_package_share_directory("pal_nav2_bringup")
-    tiago_pro_2dnav = get_package_share_directory("tiago_pro_2dnav")
-
-    laser_bringup_launch = IncludeLaunchDescription(
-            PythonLaunchDescriptionSource(
-                os.path.join(
-                    pal_nav2_bringup,
-                    "launch",
-                    "nav_bringup.launch.py",
-                )
-            ),
-            launch_arguments={
-                "params_pkg": "tiago_pro_laser_sensors",
-                "params_file": "laser_pipeline_sim_multi.yaml",
-                "robot_name": "tiago_pro",
-                "remappings_file": os.path.join(
-                    tiago_pro_2dnav,
-                    "params",
-                    "tiago_pro_remappings_sim.yaml"),
-            }.items(),
-        )
-
-    nav_bringup_launch = IncludeLaunchDescription(
-        PythonLaunchDescriptionSource(
-            os.path.join(
-                pal_nav2_bringup,
-                "launch",
-                "nav_bringup.launch.py",
-            )
-        ),
+    nav_bringup_launch = include_scoped_launch_py_description(
+        pkg_name="pal_nav2_bringup",
+        paths=["launch", "nav_bringup.launch.py"],
         launch_arguments={
             "params_pkg": "tiago_pro_2dnav",
             "params_file": "tiago_pro_nav.yaml",
             "robot_name": "tiago_pro",
-            "remappings_file": os.path.join(
-                tiago_pro_2dnav,
-                "params",
-                "tiago_pro_remappings_sim.yaml"),
-        }.items()
+            "remappings_file": remmaping_file,
+        }
     )
 
-    slam_bringup_launch = IncludeLaunchDescription(
-        PythonLaunchDescriptionSource(
-            os.path.join(
-                pal_nav2_bringup,
-                "launch",
-                "nav_bringup.launch.py",
-            )
-        ),
+    slam_bringup_launch = include_scoped_launch_py_description(
+        pkg_name="pal_nav2_bringup",
+        paths=["launch", "nav_bringup.launch.py"],
         launch_arguments={
             "params_pkg": "tiago_pro_2dnav",
             "params_file": "tiago_pro_slam.yaml",
             "robot_name": "tiago_pro",
-        }.items(),
-        condition=IfCondition(LaunchConfiguration('slam')),
+        },
+        condition=IfCondition(LaunchConfiguration("slam"))
     )
 
-    loc_bringup_launch = IncludeLaunchDescription(
-        PythonLaunchDescriptionSource(
-            os.path.join(
-                pal_nav2_bringup,
-                "launch",
-                "nav_bringup.launch.py",
-            )
-        ),
+    loc_bringup_launch = include_scoped_launch_py_description(
+        pkg_name="pal_nav2_bringup",
+        paths=["launch", "nav_bringup.launch.py"],
         launch_arguments={
             "params_pkg": "tiago_pro_2dnav",
             "params_file": "tiago_pro_loc.yaml",
             "robot_name": "tiago_pro",
-        }.items(),
-        condition=UnlessCondition(LaunchConfiguration('slam')),
+        },
+        condition=UnlessCondition(LaunchConfiguration("slam"))
     )
 
     rviz_node = Node(
-            package="rviz2",
-            executable="rviz2",
-            arguments=["-d", os.path.join(
+        package="rviz2",
+        executable="rviz2",
+        arguments=["-d", os.path.join(
                 tiago_pro_2dnav,
                 "config",
                 "rviz",
                 "navigation.rviz",
-            )],
-            output="screen",
-        )
+        )],
+        output="screen",
+    )
 
     # Create the launch description and populate
     ld = LaunchDescription()
     ld.add_action(laser_bringup_launch)
-    ld.add_action(declare_slam_arg)
     ld.add_action(slam_bringup_launch)
     ld.add_action(nav_bringup_launch)
     ld.add_action(loc_bringup_launch)
