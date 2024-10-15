@@ -33,6 +33,7 @@ from launch_pal.include_utils import include_scoped_launch_py_description
 class LaunchArguments(LaunchArgumentsBase):
 
     slam: DeclareLaunchArgument = CommonArgs.slam
+    advanced_navigation: DeclareLaunchArgument = CommonArgs.advanced_navigation
 
 
 def generate_launch_description():
@@ -98,6 +99,7 @@ def declare_actions(launch_description: LaunchDescription, launch_args: LaunchAr
     )
 
     rviz_node = Node(
+        condition=UnlessCondition(LaunchConfiguration("advanced_navigation")),
         package="rviz2",
         executable="rviz2",
         arguments=["-d", os.path.join(
