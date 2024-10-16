@@ -2,8 +2,8 @@
 Changelog for package tiago_pro_2dnav
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+2.2.0 (2024-10-16)
+------------------
 * added unless condition to rviz
 * Restructure navigation launch file
 * Contributors: Aina, martinaannicelli
