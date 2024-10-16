@@ -2,6 +2,12 @@
 Changelog for package tiago_pro_2dnav
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* added unless condition to rviz
+* Restructure navigation launch file
+* Contributors: Aina, martinaannicelli
+
 2.1.2 (2024-07-19)
 ------------------
 * fix laser frames

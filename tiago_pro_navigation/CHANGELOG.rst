@@ -2,6 +2,9 @@
 Changelog for package tiago_pro_navigation
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+
 2.1.2 (2024-07-19)
 ------------------
 
