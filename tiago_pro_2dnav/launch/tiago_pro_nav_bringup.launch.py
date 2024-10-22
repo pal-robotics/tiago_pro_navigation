@@ -112,11 +112,8 @@ def declare_actions(launch_description: LaunchDescription, launch_args: LaunchAr
     )
 
     # Create the launch description and populate
-    ld = LaunchDescription()
-    ld.add_action(laser_bringup_launch)
-    ld.add_action(slam_bringup_launch)
-    ld.add_action(nav_bringup_launch)
-    ld.add_action(loc_bringup_launch)
-    ld.add_action(rviz_node)
-
-    return ld
+    launch_description.add_action(laser_bringup_launch)
+    launch_description.add_action(slam_bringup_launch)
+    launch_description.add_action(nav_bringup_launch)
+    launch_description.add_action(loc_bringup_launch)
+    launch_description.add_action(rviz_node)
