@@ -2,8 +2,8 @@
 Changelog for package tiago_pro_2dnav
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+2.3.1 (2024-10-23)
+------------------
 * fix start navigation
 * Contributors: antoniobrandi
 
