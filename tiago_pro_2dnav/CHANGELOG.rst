@@ -2,6 +2,11 @@
 Changelog for package tiago_pro_2dnav
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* Using MPPI
+* Contributors: andreacapodacqua
+
 2.2.0 (2024-10-16)
 ------------------
 * added unless condition to rviz

@@ -2,6 +2,9 @@
 Changelog for package tiago_pro_rgbd_sensors
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+
 2.2.0 (2024-10-16)
 ------------------
 
