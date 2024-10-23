@@ -2,6 +2,11 @@
 Changelog for package tiago_pro_2dnav
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* fix start navigation
+* Contributors: antoniobrandi
+
 2.3.0 (2024-10-23)
 ------------------
 * Using MPPI
