@@ -29,13 +29,13 @@ from launch_pal.robot_arguments import CommonArgs
 from launch_pal.arg_utils import LaunchArgumentsBase
 from launch_pal.arg_utils import read_launch_argument
 from launch_pal.include_utils import include_scoped_launch_py_description
-from tiago_description.launch_arguments import TiagoArgs
+from tiago_pro_description.launch_arguments import TiagoProArgs
 
 
 @dataclass(frozen=True)
 class LaunchArguments(LaunchArgumentsBase):
 
-    base_type: DeclareLaunchArgument = TiagoArgs.base_type
+    base_type: DeclareLaunchArgument = TiagoProArgs.base_type
     slam: DeclareLaunchArgument = CommonArgs.slam
     advanced_navigation: DeclareLaunchArgument = CommonArgs.advanced_navigation
 
