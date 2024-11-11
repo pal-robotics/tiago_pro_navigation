@@ -1,4 +1,4 @@
-localization_w_composition:
+rgbd:
   launch: "pal_navigation_cfg_utils pipeline_executor.launch.py
-          pipeline:=localization_w_composition
+          pipeline:=rgbd_@camera_model@
           robot_name:=@base_type@"
