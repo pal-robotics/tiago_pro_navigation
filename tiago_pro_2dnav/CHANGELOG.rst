@@ -2,8 +2,8 @@
 Changelog for package tiago_pro_2dnav
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+2.4.0 (2024-11-14)
+------------------
 * using tiago_pro args
 * register nav variables and pipelines
 * Contributors: antoniobrandi
