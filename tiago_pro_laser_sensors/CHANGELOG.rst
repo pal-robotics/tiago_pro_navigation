@@ -2,6 +2,11 @@
 Changelog for package tiago_pro_laser_sensors
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* register nav variables and pipelines
+* Contributors: antoniobrandi
+
 2.3.1 (2024-10-23)
 ------------------
 

@@ -2,6 +2,12 @@
 Changelog for package tiago_pro_rgbd_sensors
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* typo
+* register nav variables and pipelines
+* Contributors: antoniobrandi
+
 2.3.1 (2024-10-23)
 ------------------
 
