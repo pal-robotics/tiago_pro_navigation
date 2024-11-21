@@ -2,6 +2,11 @@
 Changelog for package tiago_pro_2dnav
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* start rviz with use_sim_time
+* Contributors: antoniobrandi
+
 2.4.0 (2024-11-14)
 ------------------
 * using tiago_pro args
