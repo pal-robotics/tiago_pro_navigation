@@ -2,6 +2,12 @@
 Changelog for package tiago_pro_2dnav
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* nav deps and specifics
+* fix dep
+* Contributors: andreacapodacqua, antoniobrandi
+
 2.4.1 (2024-11-21)
 ------------------
 * start rviz with use_sim_time
