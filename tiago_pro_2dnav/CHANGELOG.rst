@@ -2,6 +2,9 @@
 Changelog for package tiago_pro_2dnav
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+
 2.5.0 (2024-12-02)
 ------------------
 * nav deps and specifics

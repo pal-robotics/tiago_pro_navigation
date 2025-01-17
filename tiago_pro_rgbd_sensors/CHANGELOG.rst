@@ -2,6 +2,11 @@
 Changelog for package tiago_pro_rgbd_sensors
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* define rgbd variables for tiago pro
+* Contributors: antoniobrandi
+
 2.5.0 (2024-12-02)
 ------------------
 * nav deps and specifics
