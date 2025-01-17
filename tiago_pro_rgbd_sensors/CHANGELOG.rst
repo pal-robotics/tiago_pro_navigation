@@ -2,8 +2,8 @@
 Changelog for package tiago_pro_rgbd_sensors
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+2.6.0 (2025-01-17)
+------------------
 * define rgbd variables for tiago pro
 * Contributors: antoniobrandi
 
