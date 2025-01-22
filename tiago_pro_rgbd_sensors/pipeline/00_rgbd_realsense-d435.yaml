@@ -8,4 +8,4 @@ tiago_pro:
           namespace: "head_front_camera"
           variables:
             camera_name: "head_front_camera"
-            serial_no: ""
+            serial_no: "''"

@@ -3,7 +3,7 @@
 tiago_pro:
   #camera_0 remappings:
   name_camera_0: "head_front_camera"
-  serial_no_camera_0: ""
+  serial_no_camera_0: "''"
   pointcloud_topic_0: "/head_front_camera/depth/color/points"
   camera_0_vertical_fov: 1.01
   camera_0_horizontal_fov: 1.5
