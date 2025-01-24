@@ -2,8 +2,8 @@
 Changelog for package tiago_pro_rgbd_sensors
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+2.7.0 (2025-01-24)
+------------------
 * fix empty serial_no
 * uniform rgbd launch
 * Contributors: antoniobrandi
