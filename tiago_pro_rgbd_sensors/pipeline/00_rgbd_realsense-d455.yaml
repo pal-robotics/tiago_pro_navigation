@@ -1,0 +1,11 @@
+tiago_pro:
+  rgbd_realsense-d455:
+    containers:
+      rgbd_container:
+        head_front_camera:
+          app: realsense
+          params: []
+          namespace: "head_front_camera"
+          variables:
+            camera_name: "head_front_camera"
+            serial_no: "''"

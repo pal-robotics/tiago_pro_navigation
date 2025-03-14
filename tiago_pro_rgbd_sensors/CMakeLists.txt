@@ -12,7 +12,8 @@ endif()
 
 if(pal_navigation_cfg_cmake_FOUND)
   pal_navigation_cfg_register_pipeline(pipeline/00_rgbd_realsense-d435.yaml
-                                      pipeline/00_rgbd_realsense-d435i.yaml)
+                                      pipeline/00_rgbd_realsense-d435i.yaml
+                                      pipeline/00_rgbd_realsense-d455.yaml)
   pal_navigation_cfg_register_variables(variables/20_rgbd_variables.yaml)
 elseif(DEFINED ENV{PAL_DISTRO})
   message(FATAL_ERROR "The pal_navigation_cfg_cmake package was not found. Pipelines not registered.")
