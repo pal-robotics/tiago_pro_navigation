@@ -4,7 +4,7 @@ tiago_pro:
       rgbd_container:
         head_front_camera:
           app: realsense
-          params: []
+          params: [d455_rgbd_high_accuracy]
           namespace: "head_front_camera"
           variables:
             camera_name: "head_front_camera"
