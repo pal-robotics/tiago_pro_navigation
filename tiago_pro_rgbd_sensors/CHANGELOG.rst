@@ -2,6 +2,11 @@
 Changelog for package tiago_pro_rgbd_sensors
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* added d455 param config
+* Contributors: andreacapodacqua
+
 2.8.0 (2025-03-14)
 ------------------
 * add support d455
