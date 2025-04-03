@@ -10,9 +10,9 @@ find_package(ament_cmake_pal QUIET)
 ament_auto_find_build_dependencies()
 
 if(pal_module_cmake_FOUND)
-  pal_register_modules(module/10_localization.yaml
-                      module/10_navigation.yaml
-                      module/10_slam.yaml)
+  pal_register_modules(module/40_localization.yaml
+                      module/40_navigation.yaml
+                      module/40_slam.yaml)
 elseif(DEFINED ENV{PAL_DISTRO})
   message(FATAL_ERROR "The pal_module_cmake package was not found. Modules not registered.")
 endif()
@@ -22,4 +22,4 @@ if(BUILD_TESTING)
   ament_lint_auto_find_test_dependencies()
 endif()
 
-ament_auto_package(INSTALL_TO_SHARE config launch)
+ament_auto_package()
