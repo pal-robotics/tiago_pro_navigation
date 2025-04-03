@@ -2,6 +2,11 @@
 Changelog for package tiago_pro_laser_sensors
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* Adopt pal configuration
+* Contributors: antoniobrandi
+
 2.9.0 (2025-03-19)
 ------------------
 
