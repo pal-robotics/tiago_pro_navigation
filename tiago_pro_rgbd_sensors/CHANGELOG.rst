@@ -2,6 +2,13 @@
 Changelog for package tiago_pro_rgbd_sensors
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* Update 2 files
+  - /tiago_pro_rgbd_sensors/pipeline/00_rgbd_realsense-d455.yaml
+  - /tiago_pro_rgbd_sensors/CMakeLists.txt
+* Contributors: antoniobrandi
+
 2.10.0 (2025-04-03)
 -------------------
 * Adopt pal configuration
