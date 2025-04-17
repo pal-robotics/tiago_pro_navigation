@@ -2,4 +2,3 @@
   template: "d435i_rgbd_low_contrast.yaml"
   ros__parameters:
     camera_name: "head_front_camera"
-    serial_no: "${serial_noumber_camera_0}"
