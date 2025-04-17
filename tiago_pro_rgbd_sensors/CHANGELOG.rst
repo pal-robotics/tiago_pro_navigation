@@ -2,6 +2,13 @@
 Changelog for package tiago_pro_rgbd_sensors
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* use d455 config
+* support d455
+* remove camera_sn variable
+* Contributors: antoniobrandi
+
 2.11.0 (2025-04-15)
 -------------------
 * Update 2 files
