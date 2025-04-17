@@ -15,6 +15,7 @@ if(pal_configuration_cmake_FOUND)
     CONFIGS
       params/00_rgbd_head_front_realsense-d435_tiago_pro.yaml
       params/00_rgbd_head_front_realsense-d435i_tiago_pro.yaml
+      params/00_rgbd_head_front_realsense-d455_tiago_pro.yaml
     RESOURCE_NAME
       realsense_camera_cfg
   )

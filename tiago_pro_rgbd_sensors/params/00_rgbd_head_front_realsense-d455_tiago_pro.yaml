@@ -2,6 +2,6 @@
   use_preset: "d435_rgbd_low_contrast.yaml"
   use_if:
     robot_type: tiago_pro
-    camera_model: realsense-d435
+    camera_model: realsense-d455
   ros__parameters:
     camera_name: "head_front_camera"
