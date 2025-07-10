@@ -2,6 +2,11 @@
 Changelog for package tiago_pro_rgbd_sensors
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* Add diagnostic analyzers
+* Contributors: Noel Jimenez
+
 2.12.0 (2025-04-17)
 -------------------
 * use d455 config
