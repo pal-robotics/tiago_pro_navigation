@@ -2,6 +2,11 @@
 Changelog for package tiago_pro_rgbd_sensors
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* fix deps for public release
+* Contributors: andreacapodacqua
+
 2.13.0 (2025-07-10)
 -------------------
 * Add diagnostic analyzers
