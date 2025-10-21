@@ -54,7 +54,7 @@ def generate_launch_description():
                 package='realsense2_camera',
                 plugin='realsense2_camera::RealSenseNodeFactory',
                 name=head_front_camera_node,
-                namespace='head_front_camera',
+                namespace='',
                 parameters=head_front_camera_config["parameters"],
                 remappings=head_front_camera_config["remappings"],
             ),
