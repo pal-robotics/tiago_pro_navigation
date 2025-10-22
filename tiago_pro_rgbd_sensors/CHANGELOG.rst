@@ -2,6 +2,11 @@
 Changelog for package tiago_pro_rgbd_sensors
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* removed camera namespace from realsense driver
+* Contributors: martinaannicelli
+
 2.13.2 (2025-10-14)
 -------------------
 * linters
