@@ -2,8 +2,8 @@
 Changelog for package tiago_pro_2dnav
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+2.15.0 (2026-07-07)
+-------------------
 * adapt eulero refactor
 * Contributors: antoniobrandi
 
