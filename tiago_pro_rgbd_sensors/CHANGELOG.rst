@@ -2,8 +2,8 @@
 Changelog for package tiago_pro_rgbd_sensors
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+2.16.1 (2026-11-18)
+-------------------
 * Bump cmake_minimum_required to 3.10
 * Contributors: Mathias Lüdtke
 
