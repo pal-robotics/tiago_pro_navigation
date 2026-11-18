@@ -2,6 +2,11 @@
 Changelog for package tiago_pro_laser_sensors
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* Bump cmake_minimum_required to 3.10
+* Contributors: Mathias Lüdtke
+
 2.16.0 (2026-09-29)
 -------------------
 
